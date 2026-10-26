@@ -1,6 +1,6 @@
 def money_change(money):
 
-    if money.isdigit() or money < 0:
+    if type(money) is not int  or money < 0:
         return None
 
     list_coins = [5, 2, 1]
