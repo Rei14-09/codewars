@@ -8,7 +8,7 @@ def money_change(money):
         change = []
         for coin in list_coins:
             change.append(money // coin)
-            money = money % coin
+            money %= coin
 
         assert not money
 
