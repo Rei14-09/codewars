@@ -5,11 +5,11 @@ def money_change(money):
 
         list_coins = [5, 2, 1]
         change = [0,0,0]
-        coin = 0
+        coin_index = 0
         while money != 0:
-            change[coin] = money // list_coins[coin]
-            money %= list_coins[coin]
-            coin +=1
+            change[coin] = money // list_coins[coin_index]
+            money %= list_coins[coin_index]
+            coin_index +=1
 
         assert not money
 
