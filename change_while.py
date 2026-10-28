@@ -8,7 +8,7 @@ def money_change(money):
         coin = 0
         while money != 0:
             change[coin] = money // list_coins[coin]
-            money = money % list_coins[coin]
+            money %= list_coins[coin]
             coin +=1
 
         assert not money
