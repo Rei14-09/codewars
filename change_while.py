@@ -3,9 +3,6 @@ def money_change(money):
     try:
         assert isinstance(money,int)
 
-        if  money < 0:
-            return None
-
         list_coins = [5, 2, 1]
         change = [0,0,0]
         coin = 0
