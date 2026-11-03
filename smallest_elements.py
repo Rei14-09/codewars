@@ -3,16 +3,16 @@ def first_n_smallest(number_list, n):
     if n == 0:
         return []
     
-    small = sorted(number_list)(:n)
-    resultado = []
+    ordered_list = sorted(number_list)(:n)
+    smallest = []
     
     for number in number_list:
-        if number in small:
-            resultado.append(number)
+        if number in ordered_list:
+            smallest.append(number)
             
             small.remove(number)
             
-    return resultado
+    return smallest
 
 if __name__ in '__main__':
   assert first_n_smallest ([1,2,3,4,5],3) == [1,2,3]
