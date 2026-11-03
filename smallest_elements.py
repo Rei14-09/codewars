@@ -3,7 +3,7 @@ def first_n_smallest(number_list, n):
     if n == 0:
         return []
     
-    small = sort(number_list)
+    small = sorted(number_list)(:n)
     resultado = []
     
     for number in number_list:
